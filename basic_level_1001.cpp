@@ -1,9 +1,12 @@
 #include<iostream>
 int test(int);
 int main() {
-    int num;
-    std::cin >> num;
-    std::cout << test(num) << std::endl;
+    int num,max = 0;
+    for(int i = 1;i < 101;i ++)
+        if(test(i)>max)
+            max = test(i);
+    std::cout << max;
+        // std::cout << i << " : " << test(i) << std::endl;
 }
 
 int test(int num) {
