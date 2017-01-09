@@ -9,9 +9,9 @@ int main() {
     while(sentence[end_index])
         end_index ++;
     end_index --;
-    for(int i = end_index;i > 0;i --) {
+    for(int i = end_index; i > 0; i --) {
         if(sentence[i] == ' ') {
-            for(int j = i + 1;j <= end_index; j ++) {
+            for(int j = i + 1; j <= end_index; j ++) {
                 cout << sentence[j];
             }
             cout << ' ';
@@ -19,6 +19,6 @@ int main() {
         }
     }
     int i = sentence[0] == ' ' ? 1 : 0;
-    for(;i <= end_index;i ++)
+    for(; i <= end_index; i ++)
         cout << sentence[i];
 }
