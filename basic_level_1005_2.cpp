@@ -38,13 +38,13 @@ int main() {
         else {
             int* temp = new int[75];
             get_all_numbers(numbers[i], temp);
-            for(int j = 0;j < times;j ++) {
+            for(int j = 0; j < times; j ++) {
                 if(find(temp, numbers[j]))
                     numbers[j] = 0;
             }
             delete temp;
         }
-        
+
     }
     bool result[101];
     for(int i = 0; i < 101; i ++) {
