@@ -33,10 +33,7 @@ int main() {
             }
         }
     }
-    bool result[101];
-    for(int i = 0; i < 100; i ++) {
-        result[i] = false;
-    }
+    bool result[101] = {};
     for(int i = 0; i < times; i++ ) {
         if(numbers[i])
             result[numbers[i]] = true;

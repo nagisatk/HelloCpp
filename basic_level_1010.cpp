@@ -11,9 +11,8 @@ int main() {
     cout << top_coef * top_exp << ' '
          << top_exp - 1;
     int end = top_exp * 2;
-    int coef_exp[end];
+    int coef_exp[end] = {};
     for(int i = 0; i < end; i ++) {
-        coef_exp[i] = 0;
         cin >> coef_exp[i];
         if(coef_exp[i] == '0')
             break;
