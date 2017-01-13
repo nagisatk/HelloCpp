@@ -1,8 +1,5 @@
-#include<iostream>
 #include<stdio.h>
 #include<algorithm>
-#include<vector>
-using namespace std;
 
 struct student {
     int sno;
@@ -42,17 +39,14 @@ int main() {
     for(int i = 0;i < n;i ++) {
         student st;
         scanf("%d %d %d",&st.sno,&st.morality,&st.talent);
-        // cin >> st.sno >> st.morality >> st.talent;
         st.rank = get_rank(st, h, l);
         st.total = st.morality + st.talent;
         if(st.rank < 4) {
             stus[c++] = st;
         }
     }
-    cout << c << endl;
-    sort(stus, stus+c, compare);
+    printf("%d\n", c);
+    std::sort(stus, stus+c, compare);
     for(int i = 0;i < c;i++)
         printf("%d %d %d\n", stus[i].sno, stus[i].morality, stus[i].talent);
-        // cout << stus[i].sno  << ' ' << stus[i].morality << ' ' << stus[i].talent << endl;
-    cin >> n;
 }
