@@ -13,9 +13,8 @@ int main() {
     int e, eday;
     cin >> eday;
     int emile[eday] = {};
-    for(int i=0; i<eday; i++) {
+    for(int i=0; i<eday; i++)
         cin >> emile[i];
-    }
     sort(emile, emile+eday);
     e = eday;
     for(int i=0; i<eday; i++)
